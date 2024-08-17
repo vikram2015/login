@@ -1,0 +1,97 @@
+<section>
+  <div class="heading">{{ candidateName }} Profile</div>
+
+  <div>
+    <mat-card>
+      <!-- <mat-card-header>
+        <mat-card-title>Actions Buttons</mat-card-title>
+        <mat-card-subtitle>Start</mat-card-subtitle>
+      </mat-card-header> -->
+      <mat-card-content>
+        <form [formGroup]="candidateForm" novalidate>
+          <div class="name-section">
+            <div>
+              <!-- <div>
+                <label for="firstName">First Name</label>
+              </div> -->
+              <div>
+                <mat-form-field appearance="outline" style="width: 300px">
+                  <mat-label>First Name</mat-label>
+                  <input type="text" name="firstName" formControlName="firstName" matInput placeholder="First Name" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div>
+              <!-- <div>
+                <label for="middleName">Middle Name</label>
+              </div> -->
+              <div>
+                <mat-form-field appearance="outline" style="width: 300px">
+                  <mat-label>Middle Name</mat-label>
+                  <input type="text" name="middleName" formControlName="middleName" matInput placeholder="Middle Name" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div>
+              <!-- <div>
+                <label for="lastName">Last Name</label>
+              </div> -->
+              <div>
+                <mat-form-field appearance="outline" style="width: 300px">
+                  <mat-label>Last Name</mat-label>
+                  <input type="text" name="lastName" formControlName="lastName" matInput placeholder="Last Name" />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div class="name-section">
+            <div>
+              <!-- <div>
+                <label for="mobile">Mobile Number</label>
+              </div> -->
+              <div>
+                <mat-form-field appearance="outline" style="width: 300px">
+                  <mat-label>Contact</mat-label>
+                  <input type="number" name="contact" formControlName="contact" matInput placeholder="Contact" maxlength="12"/>
+                </mat-form-field>
+              </div>
+            </div>
+            <div>
+              <!-- <div>
+                <label for="email">Email</label>
+              </div> -->
+              <div>
+                <mat-form-field appearance="outline" style="width: 300px">
+                  <mat-label>Email</mat-label>
+                  <input type="email" name="email" formControlName="email" matInput placeholder="email" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div>
+              <!-- <div>
+                <label for="DOB">DOB</label>
+              </div> -->
+              <div>
+                <mat-form-field style="width: 300px">
+                  <mat-label>Date of birth</mat-label>
+                  <input matInput [matDatepicker]="dp3" formControlName="dateOfBirth" />
+                  <mat-hint>MM/DD/YYYY</mat-hint>
+                  <mat-datepicker-toggle
+                    matIconSuffix
+                    [for]="dp3"
+                  ></mat-datepicker-toggle>
+                  <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="update-button">
+          <button mat-raised-button color="primary" (click)="updateCandidateDetails()">Update</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</section>

@@ -1,0 +1,50 @@
+<div class="backFlow" (click)="jobDetailsPage()">
+  <div><mat-icon>keyboard_arrow_left</mat-icon></div>
+  <div>Job-List</div>
+</div>
+
+<div class="heading">Job Details</div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ jobDetails.job_title }}</mat-card-title>
+  </mat-card-header>
+  <div class="job-sub-heading">
+    <div class="job-description">
+      <div>Location:</div>
+      <div>{{ jobDetails.job_location }}</div>
+    </div>
+    <div class="job-description">
+      <div>Shift:</div>
+      <div>{{ jobDetails.job_shift }}</div>
+    </div>
+    <div class="job-description">
+      <div>Job Timing:</div>
+      <div>{{ jobDetails.job_timing }}</div>
+    </div>
+    <div class="job-description">
+      <div>Job Type:</div>
+      <div>{{ jobDetails.job_type }}</div>
+    </div>
+  </div>
+
+  <mat-card-content>
+    <div class="skills">
+      <div class="skill-content">
+        <b><u>Skills Required:</u></b>
+      </div>
+      <div>{{ jobDetails.job_skills }}</div>
+    </div>
+    <div class="short-desc">
+      <div class="short-desc-content">
+        <b><u>Short Description:</u></b>
+      </div>
+      <div>{{ jobDetails.job_short_desc }}</div>
+    </div>
+    <div class="long-desc">
+      <div class="long-desc-content">
+        <b><u>Long Description:</u></b>
+      </div>
+      <div>{{ jobDetails.job_long_desc }}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

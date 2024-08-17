@@ -1,0 +1,20 @@
+
+.heading{
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 2rem 1rem;
+}
+
+.name-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.update-button{
+  display: flex;
+  padding: 1rem 2rem;
+}

@@ -1,0 +1,47 @@
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px;
+}
+.menu-items {
+  padding: 1rem 0rem;
+  width: 100% !important;
+}
+.menu-items button {
+  width: 100% !important;
+}
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+}
+
+.menu-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #6b6985;
+}
+
+.activebutton {
+  background: rgba(51, 128, 255, 0.1);
+  .menu-text span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    color: #3380ff;
+  }
+}

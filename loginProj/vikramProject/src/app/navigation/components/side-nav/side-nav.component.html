@@ -1,0 +1,96 @@
+<div class="logo-box" routerLink="candidate/profile">
+  <div>
+    <img style="height: 50px" src="assets/images/logo.jpg" alt="" />
+  </div>
+  <div>Vikram</div>
+</div>
+
+<div *ngIf="checkCandidateAccess(); then candidateMenu; else hrMenu"></div>
+<ng-template #candidateMenu>
+  <div class="side-menu">
+    <div class="menu-items">
+      <button
+        mat-flat-button
+        routerLink="candidate/profile"
+        [routerLinkActive]="'activebutton'"
+      >
+        <div class="menu-content">
+          <div class="menu-image">
+            <img height="30px" src="assets/images/profileImg.png" alt="" />
+          </div>
+          <div class="menu-text">
+            <span>Profile</span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="menu-items">
+      <button
+        mat-flat-button
+        routerLink="candidate/jobs/job-listing"
+        [routerLinkActive]="'activebutton'"
+      >
+        <div class="menu-content">
+          <div class="menu-image">
+            <img height="30px" src="assets/images/vacancy.jpg" alt="" />
+          </div>
+          <div class="menu-text">
+            <span>Job List</span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="menu-items">
+      <button
+        mat-flat-button
+        routerLink="candidate/status/status-list"
+        [routerLinkActive]="'activebutton'"
+      >
+        <div class="menu-content">
+          <div class="menu-image">
+            <img height="30px" src="assets/images/status.png" alt="" />
+          </div>
+          <div class="menu-text">
+            <span>Status</span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</ng-template>
+<ng-template #hrMenu>
+  <div class="side-menu">
+    <div class="menu-items">
+      <button
+        mat-flat-button
+        routerLink="admin/providers"
+        [routerLinkActive]="'activebutton'"
+      >
+        <div class="menu-content">
+          <div class="menu-image">
+            <img height="30px" src="assets/images/profileImg.png" alt="" />
+          </div>
+          <div class="menu-text">
+            <span>Candidate</span>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div class="menu-items">
+      <button
+        mat-flat-button
+        routerLink="admin/providers"
+        [routerLinkActive]="'activebutton'"
+      >
+        <div class="menu-content">
+          <div class="menu-image">
+            <img height="30px" src="assets/images/vacancy.jpg" alt="" />
+          </div>
+          <div class="menu-text">
+            <span>Job List</span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+</ng-template>

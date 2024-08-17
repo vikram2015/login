@@ -1,0 +1,20 @@
+<section
+  [ngClass]="userAuthentication ? 'adminSectionView' : 'adminSectionView'"
+>
+<div *ngIf="userAuthentication">
+  <app-header></app-header>
+</div>
+
+  <mat-sidenav-container style="height: 100%">
+
+    <mat-sidenav #sidenav="matSidenav" class="">
+      <app-side-nav [menuRole]="getMenuRole()" [sidenav]="sidenav"></app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-toast></app-toast>
+      <div [ngClass]="sidenav.mode === 'over' ? 'fullView' : 'adminContent'">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</section>

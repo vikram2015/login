@@ -1,0 +1,22 @@
+.left-menu{
+  margin: 0px 10px;
+}
+
+.profile-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 1rem;
+  cursor: pointer;
+}
+
+.logout-menu{
+  padding: 10px 0px;
+}
+
+.login-heading{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}

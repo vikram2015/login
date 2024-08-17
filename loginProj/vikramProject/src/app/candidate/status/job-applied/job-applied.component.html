@@ -1,0 +1,70 @@
+<div style="display: flex; flex-direction: row; flex-wrap: wrap">
+  <div
+    *ngFor="let job of jobDetails; let i = index"
+    style="width: 400px; padding: 10px"
+  >
+    <div>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ job.job_title }}</mat-card-title>
+          <mat-card-subtitle>
+            <div class="job-subheading">
+              <div class="job-sub-row">
+                <div>Job Location:</div>
+                <div>{{ job.job_location }}</div>
+              </div>
+              <div class="job-sub-row">
+                <div>Job Shift:</div>
+                <div>{{ job.job_shift }}</div>
+              </div>
+              <div class="job-sub-row">
+                <div>Job Timing:</div>
+                <div>{{ job.job_timing }}</div>
+              </div>
+              <div class="job-sub-row">
+                <div>Job Type:</div>
+                <div>{{ job.job_type }}</div>
+              </div>
+            </div>
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="job-subheading">
+            <div>
+              <b><u>Skills:</u></b>
+            </div>
+            <div>{{ job.job_skills }}</div>
+          </div>
+          <div class="job-subheading">
+            <div>
+              <b><u>Short Description:</u></b>
+            </div>
+            <div>{{ job.job_short_desc }}</div>
+          </div>
+          <div class="job-subheading">
+            <div>
+              <b><u>Long Description:</u></b>
+            </div>
+            <div>{{ job.job_long_desc }}</div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            style="color: #ffff !important; background: #09a619"
+            (click)="applyJob(job)"
+          >
+            Apply job
+          </button>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="jobDetailsPage(job)"
+          >
+            Job Details
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

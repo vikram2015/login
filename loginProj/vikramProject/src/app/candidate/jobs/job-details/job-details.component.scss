@@ -1,0 +1,59 @@
+.backFlow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 2rem 0rem;
+}
+
+.job-sub-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+}
+
+.job-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #82878f;
+  padding: 8px 0rem;
+}
+
+.skills{
+  font-size: 20px;
+  padding: 2rem 1rem;
+}
+
+.skill-content{
+  padding: 1rem 0rem;
+}
+
+.short-desc{
+  font-size: 20px;
+  padding: 2rem 1rem;
+}
+
+.short-desc-content{
+  padding: 1rem 0rem;
+}
+
+.long-desc{
+  font-size: 20px;
+  padding: 2rem 1rem;
+}
+
+.long-desc-content{
+  padding: 1rem 0rem;
+}
